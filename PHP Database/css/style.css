@@ -1,0 +1,219 @@
+:root{
+        --primary: #af69ee;
+}
+
+*{
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+}
+
+body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background: #f2f2f2;
+
+}
+
+.hero {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        /* display: flex; */
+        /* position: relative; */
+        margin: 2rem 0;
+}
+
+.hero .card h1{
+        flex-wrap: wrap-reverse;
+        margin: 1rem ;
+
+}
+.hero .table{
+        border-collapse: collapse;
+        justify-content: center;
+        display: inline-block;
+}
+
+.hero .table th, .hero .table td{
+        border: 1px solid #000;
+        padding: 1rem;
+        text-transform: capitalize;
+}
+
+.hero .table .aksi{
+        padding: 0.5rem 1rem;
+        color: #000;
+        border-radius: 10%;
+}
+
+.hero .table .edit{
+        background: rgb(200, 200, 1);
+
+}
+
+.hero .table .delete{
+        background: red;
+}
+
+.section{
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+        /* background: green; */
+        display: flex;
+        /* position: relative; */
+        margin: 2rem 0;
+}
+
+.crud{
+        display: inline-block;
+        
+        
+}
+
+.crud h1{
+        text-align: center;
+}
+
+.crud a{
+        color: white;
+        background: #0580d2;
+        float: right;
+        padding: 0.5rem 1rem;
+        /* right: 0; */
+        border-radius: 0.5rem;
+        justify-content: end ;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0rem;
+
+}
+
+.table{
+        overflow-x: auto;
+        width: 100%;
+        border: 1px solid #000;
+        margin: 25px 0;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-collapse: collapse;
+}
+
+.table thead{
+        background: grey;
+        color: #fff;
+}
+
+.table thead td, .table tbody td{
+        padding: 1rem 2rem;
+}
+
+.table tbody td:nth-child(2){
+        text-align: start;
+}
+
+.table tbody tr{
+        border: 1px solid rgba(1,1,1,0.1) ;
+}
+
+.btn {
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        color: white;
+        border-radius: 0.5rem;
+        /* display: inline-block; */
+        min-width: 5rem ;
+        border: none;
+}
+
+.delete{
+        background: red;
+}
+
+.edit{
+        background: #dccf1f;
+}
+
+.delete:hover{
+        background: rgb(200, 0, 0);
+}
+
+.edit:hover{
+        background: #a89f16;
+}
+
+.table tbody tr td form{
+        display: inline-block;
+}
+
+
+.card{
+        /* border: 1px solid #000; */
+        max-width: 50%;
+        justify-content: center;
+        display: inline-block;
+        border-radius: 0.5rem;
+        background: white;
+        box-shadow: 0px -2px 0 #af69ee;
+
+}
+
+.hero .card button{
+        padding: 0.5rem 2rem;
+        margin: 1rem;
+        background: rgb(110, 109, 223);
+        color: white;
+        border-radius: 0.3rem ;
+        border: none;
+}
+
+.hero .card button:hover{
+        background: rgb(103, 119, 239);
+        text-decoration: none;
+        transition: 0.2 ease-in-out;
+}
+
+.hero form{
+        max-width: 50rem;
+        display: inline-block;
+        /* position: relative; */
+}
+
+.hero .form-control{
+        margin: 1rem 2rem;
+        /* justify-content: space-between; */
+        display: flex;
+        flex-direction: column;
+        
+}
+
+.hero .form-control label{
+        /* padding: 1rem 2rem; */
+        text-align: start;
+        /* min-width: 50rem; */
+        color: black;
+        font-weight: 100;
+        font-size: 1em;
+         
+}
+
+.hero .form-control input{
+        padding: 0.5rem 2rem;
+        min-width: 20rem;
+        display: inline-block;
+        border: 2px solid rgba(197, 140, 247, 0.3);
+        border-radius: 0.4rem ;
+}
+
+.hero .form-control input:focus{
+        border: 2px solid var(--primary);
+        outline: none;
+}
